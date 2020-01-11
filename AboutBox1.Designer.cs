@@ -59,7 +59,7 @@
             this.button7.Text = "X";
             this.button7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.Button7_Click);
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // labelProductName
             // 
@@ -130,7 +130,7 @@
             this.button1.TabIndex = 8;
             this.button1.Text = "ОК";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            this.button1.Click += new System.EventHandler(this.button7_Click);
             // 
             // label1
             // 
@@ -195,7 +195,6 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AboutBox1";
-            this.Load += new System.EventHandler(this.AboutBox1_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.AboutBox1_MouseDown);
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);

@@ -11,3 +11,14 @@ C:\Users\krist\source\repos\Desktop Sticker\Desktop Sticker\obj\Debug\Desktop St
 C:\Users\krist\source\repos\Desktop Sticker\Desktop Sticker\obj\Debug\Desktop Sticker.exe
 C:\Users\krist\source\repos\Desktop Sticker\Desktop Sticker\obj\Debug\Desktop Sticker.pdb
 C:\Users\krist\source\repos\Desktop Sticker\Desktop Sticker\obj\Debug\Desktop_Sticker.AboutBox1.resources
+C:\Users\krist\OneDrive\Рабочий стол\Desktop-sticker-master\bin\Debug\Desktop Sticker.exe.config
+C:\Users\krist\OneDrive\Рабочий стол\Desktop-sticker-master\bin\Debug\Desktop Sticker.exe
+C:\Users\krist\OneDrive\Рабочий стол\Desktop-sticker-master\bin\Debug\Desktop Sticker.pdb
+C:\Users\krist\OneDrive\Рабочий стол\Desktop-sticker-master\obj\Debug\Desktop Sticker.csprojAssemblyReference.cache
+C:\Users\krist\OneDrive\Рабочий стол\Desktop-sticker-master\obj\Debug\Desktop_Sticker.AboutBox1.resources
+C:\Users\krist\OneDrive\Рабочий стол\Desktop-sticker-master\obj\Debug\Desktop_Sticker.Form1.resources
+C:\Users\krist\OneDrive\Рабочий стол\Desktop-sticker-master\obj\Debug\Desktop_Sticker.Properties.Resources.resources
+C:\Users\krist\OneDrive\Рабочий стол\Desktop-sticker-master\obj\Debug\Desktop Sticker.csproj.GenerateResource.cache
+C:\Users\krist\OneDrive\Рабочий стол\Desktop-sticker-master\obj\Debug\Desktop Sticker.csproj.CopyComplete
+C:\Users\krist\OneDrive\Рабочий стол\Desktop-sticker-master\obj\Debug\Desktop Sticker.exe
+C:\Users\krist\OneDrive\Рабочий стол\Desktop-sticker-master\obj\Debug\Desktop Sticker.pdb

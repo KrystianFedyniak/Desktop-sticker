@@ -1,23 +1,23 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+using System.Diagnostics;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 using System.Windows.Forms;
 
 namespace Desktop_Sticker
 {
+
     public partial class Form1 : Form
     {
+
+
+
         public Form1()
         {
             InitializeComponent();
         }
 
-        
+
 
 
         private void Button7_Click(object sender, EventArgs e)
@@ -25,6 +25,9 @@ namespace Desktop_Sticker
             this.Close();
         }
 
+        //
+        // Перетаскивание формы за Panel
+        //
         private void Panel2_MouseDown(object sender, MouseEventArgs e)
         {
             panel2.Capture = false;
@@ -59,25 +62,12 @@ namespace Desktop_Sticker
             checkBox4.FlatAppearance.MouseOverBackColor = panel2.BackColor;
             button6.FlatAppearance.MouseOverBackColor = panel2.BackColor;
 
-            
 
         }
 
-        
-
-        private void Button6_Click(object sender, EventArgs e)
-        {
-            if (TopMost == false)
-            {
-                TopMost = true;
-                button6.BackColor = panel2.BackColor;
-            }
-            else
-            {
-                TopMost = false;
-                button6.BackColor = Color.FromArgb(64, 64, 64);
-            }
-        }
+        //
+        // Перетаскивание формы за Label
+        //
 
         private void Label1_MouseDown(object sender, MouseEventArgs e)
         {
@@ -87,7 +77,9 @@ namespace Desktop_Sticker
             base.WndProc(ref m);
         }
 
-        
+        //
+        // Новый лист
+        //
         void NewForm()
         {
             Form1 form = new Form1();
@@ -96,48 +88,119 @@ namespace Desktop_Sticker
         private void Button1_Click(object sender, EventArgs e)
         {
             new System.Threading.Thread(NewForm).Start();
-                    }
+        }
 
+
+        //
+        // Скрытие/Раскрытие Panel кнопка Меню
+        //
 
         private void Button8_Click(object sender, EventArgs e)
         {
             if (panel2.Size.Height == 30)
             {
-                panel2.Size= new Size(304, 260);
-                
+                panel2.Size = new Size(306, 313);
+
+
             }
             else
             {
-                panel2.Size = new Size(304, 30);
+                panel2.Size = new Size(306, 30);
                 button8.BackColor = Color.Transparent;
             }
         }
 
+
+
         private void Button9_Click(object sender, EventArgs e)
         {
-            panel2.BackColor = Color.DarkGreen;
+
+            //////////Black theme///////
+
+            panel2.BackColor = Color.FromArgb(65, 63, 63);
+            button6.ForeColor = Color.White;
+            button1.ForeColor = Color.White;
+            button13.ForeColor = Color.White;
+            button3.ForeColor = Color.White;
+            button4.ForeColor = Color.White;
+
+            button14.ForeColor = Color.White;
+
+            button8.ForeColor = Color.White;
+            label1.ForeColor = Color.White;
+
+            checkBox1.ForeColor = Color.White;
+
+            checkBox2.ForeColor = Color.White;
+
+            checkBox3.ForeColor = Color.White;
+
+            checkBox4.ForeColor = Color.White;
+
+            button2.BackColor = Color.FromArgb(64, 64, 64); button2.ForeColor = Color.White;
+
+
+            richTextBox1.BackColor = Color.DimGray;
+            richTextBox1.ForeColor = Color.Black;
+
+            button7.ForeColor = Color.White;
+
+
+            panel9.BackColor = Color.DimGray;
+            panel4.BackColor = Color.DimGray;
+            panel7.BackColor = Color.DimGray;
+            panel5.BackColor = Color.DimGray;
+
+            this.BackColor = Color.DimGray;
+
             panel2.Size = new Size(304, 30);
         }
 
         private void Button10_Click(object sender, EventArgs e)
         {
-            panel2.BackColor = Color.OrangeRed;
-            panel2.Size = new Size(304, 30);
+            //////////Light theme///////
+
+            panel2.BackColor = Color.FromArgb(224, 224, 224);
+
+            button6.ForeColor = Color.Black;
+            button1.ForeColor = Color.Black;
+            button13.ForeColor = Color.Black;
+            button3.ForeColor = Color.Black;
+            button14.ForeColor = Color.Black;
+            button4.ForeColor = Color.Black;
+
+            button8.ForeColor = Color.Black;
+            label1.ForeColor = Color.Black;
+
+            checkBox1.ForeColor = Color.Black;
+
+            checkBox2.ForeColor = Color.Black;
+
+            checkBox3.ForeColor = Color.Black;
+
+            checkBox4.ForeColor = Color.Black;
+
+            button2.BackColor = Color.FromArgb(224, 224, 224); button2.ForeColor = Color.Black;
+
+
+            panel9.BackColor = Color.Black;
+            panel4.BackColor = Color.Black;
+            panel7.BackColor = Color.Black;
+            panel5.BackColor = Color.Black;
+
+            richTextBox1.BackColor = Color.White;
+            richTextBox1.ForeColor = Color.Black;
+
+            button7.ForeColor = Color.Black;
+
+            this.BackColor = Color.White;
+
+            panel2.Size = new Size(308, 30);
         }
 
-        private void Button11_Click(object sender, EventArgs e)
-        {
-            panel2.BackColor = Color.Crimson;
-            panel2.Size = new Size(304, 30);
-        }
 
-        private void Button12_Click(object sender, EventArgs e)
-        {
-            panel2.BackColor = Color.Indigo;
-            panel2.Size = new Size(304, 30);
-        }
 
-      
+
 
         private void Button14_Click(object sender, EventArgs e)
         {
@@ -149,9 +212,13 @@ namespace Desktop_Sticker
             }
         }
 
+        //
+        // Открытие формы О программе
+        //
+
         private void Button13_Click(object sender, EventArgs e)
         {
-           AboutBox1 about = new AboutBox1();
+            AboutBox1 about = new AboutBox1();
             about.ShowDialog();
             panel2.Size = new Size(304, 30);
         }
@@ -171,9 +238,9 @@ namespace Desktop_Sticker
         {
             if (richTextBox1.SelectionFont == null)
             {
-                checkBox1.BackColor = Color.FromArgb(64,64,64);
+                checkBox1.BackColor = Color.Transparent;
                 return;
-                
+
             }
 
             FontStyle style = richTextBox1.SelectionFont.Style;
@@ -181,13 +248,13 @@ namespace Desktop_Sticker
             if (richTextBox1.SelectionFont.Bold)
             {
                 style &= ~FontStyle.Bold;
-                checkBox1.BackColor = Color.FromArgb(64,64,64);
+                checkBox1.BackColor = Color.Transparent;
 
             }
             else
             {
                 style |= FontStyle.Bold;
-                checkBox1.BackColor = Color.Red;
+                checkBox1.BackColor = Color.DarkGray;
 
             }
             richTextBox1.SelectionFont = new Font(richTextBox1.SelectionFont, style);
@@ -197,7 +264,7 @@ namespace Desktop_Sticker
         {
             if (richTextBox1.SelectionFont == null)
             {
-                checkBox2.BackColor = Color.FromArgb(64,64,64);
+                checkBox2.BackColor = Color.Transparent;
                 return;
             }
             FontStyle style = richTextBox1.SelectionFont.Style;
@@ -205,12 +272,12 @@ namespace Desktop_Sticker
             if (richTextBox1.SelectionFont.Italic)
             {
                 style &= ~FontStyle.Italic;
-                checkBox2.BackColor = Color.FromArgb(64,64,64);
+                checkBox2.BackColor = Color.Transparent;
             }
             else
             {
                 style |= FontStyle.Italic;
-                checkBox2.BackColor = Color.Red;
+                checkBox2.BackColor = Color.DarkGray;
             }
             richTextBox1.SelectionFont = new Font(richTextBox1.SelectionFont, style);
         }
@@ -219,7 +286,7 @@ namespace Desktop_Sticker
         {
             if (richTextBox1.SelectionFont == null)
             {
-                checkBox3.BackColor = Color.FromArgb(64,64,64);
+                checkBox3.BackColor = Color.Transparent;
                 return;
             }
 
@@ -228,12 +295,12 @@ namespace Desktop_Sticker
             if (richTextBox1.SelectionFont.Underline)
             {
                 style &= ~FontStyle.Underline;
-                checkBox3.BackColor = Color.FromArgb(64,64,64);
+                checkBox3.BackColor = Color.Transparent;
             }
             else
             {
                 style |= FontStyle.Underline;
-                checkBox3.BackColor = Color.Red;
+                checkBox3.BackColor = Color.DarkGray;
             }
             richTextBox1.SelectionFont = new Font(richTextBox1.SelectionFont, style);
         }
@@ -242,7 +309,7 @@ namespace Desktop_Sticker
         {
             if (richTextBox1.SelectionFont == null)
             {
-                checkBox4.BackColor = Color.FromArgb(64,64,64);
+                checkBox4.BackColor = Color.Transparent;
                 return;
             }
 
@@ -251,16 +318,65 @@ namespace Desktop_Sticker
             if (richTextBox1.SelectionFont.Strikeout)
             {
                 style &= ~FontStyle.Strikeout;
-                checkBox4.BackColor = Color.FromArgb(64,64,64);
+                checkBox4.BackColor = Color.Transparent;
             }
             else
             {
                 style |= FontStyle.Strikeout;
-                checkBox4.BackColor = Color.Red;
+                checkBox4.BackColor = Color.DarkGray;
             }
             richTextBox1.SelectionFont = new Font(richTextBox1.SelectionFont, style);
         }
 
-     
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Process.Start(@"C:\Windows\System32\calc.exe");
+        }
+
+        //
+        // кнопка закрепления Поверх всех окон 
+        //
+        private void button6_Click(object sender, EventArgs e)
+        {
+            if (TopMost == false)
+            {
+                TopMost = true;
+                button6.BackColor = Color.DarkRed;
+            }
+            else
+            {
+                TopMost = false;
+                button6.BackColor = Color.Transparent;
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "Текстовый документ (*.txt)|*.txt|Все файлы (*.*)|*.*";
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                StreamWriter streamWriter = new StreamWriter(saveFileDialog.FileName);
+                streamWriter.WriteLine(richTextBox1.Text);
+                streamWriter.Close();
+                panel2.Size = new Size(306, 30);
+
+
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Текстовый документ (*.txt)|*.txt|Все файлы (*.*)|*.*";
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                string filename = openFileDialog.FileName;
+                string text = File.ReadAllText(filename);
+                richTextBox1.Text = text;
+                panel2.Size = new Size(306, 30);
+
+            }
+        }
     }
 }

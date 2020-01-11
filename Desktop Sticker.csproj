@@ -112,12 +112,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\s.wav" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Resources\s.mp3" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="icon.ico" />
   </ItemGroup>
   <ItemGroup>
@@ -126,6 +120,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

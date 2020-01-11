@@ -22,7 +22,6 @@ namespace Desktop_Sticker
             this.textBoxDescription.Text = AssemblyDescription;
         }
 
-        System.Media.SoundPlayer SoundPlayer = new System.Media.SoundPlayer(Properties.Resources.s);
 
         #region Методы доступа к атрибутам сборки
 
@@ -105,12 +104,7 @@ namespace Desktop_Sticker
 
         #endregion
 
-        private void Button7_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            SoundPlayer.Stop();
-
-        }
+        
 
         private void AboutBox1_MouseDown(object sender, MouseEventArgs e)
         {
@@ -120,17 +114,9 @@ namespace Desktop_Sticker
             base.WndProc(ref m);
         }
 
-        private void Button1_Click(object sender, EventArgs e)
+        private void button7_Click(object sender, EventArgs e)
         {
             this.Close();
-            SoundPlayer.Stop();
-
-        }
-
-        public void AboutBox1_Load(object sender, EventArgs e)
-        {
-            SoundPlayer.Play();
-
         }
     }
 }

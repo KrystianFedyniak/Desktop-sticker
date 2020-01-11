@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // набора атрибутов. Измените значения этих атрибутов для изменения сведений,
 // связанных со сборкой.
 [assembly: AssemblyTitle("Desktop Sticker")]
-[assembly: AssemblyDescription("С помощью программы Desktop Stiker можно создавать заметки или напоминания на виртуальных листках бумаги на своем рабочем столе. Утилита имеет 4 цветовых решения, выполненных в разных стилях.Так же имеется возможность закрепить свои заметки поверх всех окон.")]
+[assembly: AssemblyDescription("С помощью программы Desktop Stiker можно создавать заметки или напоминания на виртуальных листках бумаги на своем рабочем столе. Утилита имеет темную и светлую тему.Так же имеется возможность закрепить свои заметки поверх всех окон.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Fedyniak Krystian")]
 [assembly: AssemblyProduct("Desktop Sticker")]
-[assembly: AssemblyCopyright("Copyright ©  2019")]
+[assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("Fedyniak Krystian")]
 [assembly: AssemblyCulture("")]
 
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // Можно задать все значения или принять номера сборки и редакции по умолчанию 
 // используя "*", как показано ниже:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyVersion("1.1.0.3")]
+[assembly: AssemblyFileVersion("1.1.0.3")]

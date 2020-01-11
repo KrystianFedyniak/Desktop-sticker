@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
-VisualStudioVersion = 16.0.29020.237
+VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desktop Sticker", "Desktop Sticker\Desktop Sticker.csproj", "{9EAEF16E-674B-4B6D-91FC-9328325083FB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desktop Sticker", "Desktop Sticker.csproj", "{9EAEF16E-674B-4B6D-91FC-9328325083FB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +20,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {93B1D7F6-E978-4D2E-AE42-B4DDBF81CD14}
+		SolutionGuid = {77F78804-A22C-4E52-A8A4-D5DC2C7C9512}
 	EndGlobalSection
 EndGlobal
